@@ -14,7 +14,7 @@ pandoc -o $a.odt $a.md
 pandoc -S -o $a.pdf $a.md
 
 #convert markdown to Latex
-pandoc $a --latex-engine=pdflatex -o $a.pdf 
+pandoc -S -o $a.tex $a.md 
 
 
 # Make the command line read "Converted INPUT-FILENAME to HTML, DOCX, ODT, PDF"
